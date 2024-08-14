@@ -1,7 +1,6 @@
 <?php 
 include ('conexao.php');
 
-
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if(strlen($_POST['email']) == 0){
         echo 'Preencha o seu E-mail';
@@ -33,37 +32,44 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
         }
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Login</title>
+   
 </head>
 <body>
 
-    <h1>Acesse sua conta</h1>
+<div id="content-login">
 
-<form action="" method="POST">
-    <p>
-        <label for="">E-mail</label>
-        <input type="email" name="email" id="iemail">
-    </p>
-    <p>
-        <label for="Senha">Senha</label>
-        <input type="password" name="senha" id="isenha">
-
-    </p>
-    <p>
-        <button type="submit">Entrar</button>
+    <div id="division-login">
         
-      
-    </p> 
+    <img class="img-login" src="./Img/Img_Login-removebg-preview.png" alt="Foto">
+
+    </div>
+   
+    <form action="" method="POST">
+    <h1 class="h1-text">Acesse sua conta</h1>
+        <p class="p-text">
+            <label for="">E-mail</label>
+            <input class="input-email" type="email" name="email" id="iemail">
+        </p>
+        <p class="p-text">
+            <label for="Senha">Senha</label>
+            <input class="input-password" type="password" name="senha" id="isenha">
     
-</form>
-<a href="cadastrar.php"><button>Cadastrar</button></a>
+        </p>
+        <p class="p-text"> 
+            <button class="button-enviar" type="submit">Entrar</button> <br>
+            <a href="cadastrar.php"><button class="button-cadastro" type="button">Ainda não sou cadastrado</button></a>
+        </p>
+    
+    </form>
+</div>
     
 </body>
 </html>

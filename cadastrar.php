@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="./assets/register.css">
 </head>
 <body>
-    <h2>Cadastro de Usuário</h2>
-    <form action="" method="POST"> 
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome" required><br><br> 
+    <div id="content-register">
+    <div id="showcase-register">
 
-        <input type="submit" value="Cadastrar">
-    </form>
+        <img src="./Img/6310507-removebg-preview.png" alt="foto">
+
+    </div>
+        <form action="" method="POST">
+        <h2 class="h2-text">Cadastro de Usuário</h2>
+            <label for="nome">Nome:</label> 
+            <input class="input-nome" type="text" id="nome" name="nome" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input class="input-email" type="email" id="email" name="email" required><br><br>
+        
+            <label for="senha">Senha:</label>
+            <input class="input-password" type="password" id="senha" name="senha" required><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input class="input-sobrenome" type="text" id="sobrenome" name="sobrenome" required><br><br>
+            <input class="register-button" type="submit" value="Cadastrar">
+        </form>
+    </div>
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -49,7 +56,7 @@
         $mysqli->close();
 
         header('Location: index.php');
-        exit(); 
+       
     }
     ?>
 </body>

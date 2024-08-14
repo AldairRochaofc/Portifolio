@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: arial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#content-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.img-login{
+    width: 100%;
+}
+form{
+    background-color:#FEA404 ;
+    padding: 4%;
+    border-radius: 3%;
+}
+.h1-text{
+    margin-bottom: 10%;
+    color: #4D2DCC;
+}
+input{
+    width: 320px;
+    height: 40px;
+    border: none;
+    border: 1px solid #261d49;
+    border-radius: 5px;
+    background:#D9D1FA ;
+}
+.input-email{
+    margin: 0 15% 30px 0;
+}
+.input-password{
+    margin: 0 15% 30px 0;
+}
+.button-enviar{
+border: none;
+background-color: #4D2DCC;
+color: white;
+padding: 10px 40px;
+border-radius: 10px;
+margin-top: 5%;
+}
+.button-cadastro{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    bottom:-50px;
+    left: 105px;
+}
+.button-cadastro:hover{
+    color: #261d49;
+    cursor: pointer;
+}
