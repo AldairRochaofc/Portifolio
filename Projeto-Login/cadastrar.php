@@ -11,7 +11,7 @@
     <div id="content-register">
     <div id="showcase-register">
 
-        <img src="./Img/6310507-removebg-preview.png" alt="foto">
+        <img src="../Projeto-Login/Img/6310507-removebg-preview.png" alt="foto">
 
     </div>
         <form action="" method="POST">

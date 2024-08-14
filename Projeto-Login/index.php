@@ -48,7 +48,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
     <div id="division-login">
         
-    <img class="img-login" src="./Img/Img_Login-removebg-preview.png" alt="Foto">
+    <img class="img-login" src="../Projeto-Login/img/Img_Login-removebg-preview.png" alt="Foto">
 
     </div>
    
